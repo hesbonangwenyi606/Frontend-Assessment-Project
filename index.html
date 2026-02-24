@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mansa-X Investment Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg top-nav">
+      <div class="container-xxl">
+        <a class="navbar-brand fw-bold" href="#">Mansa-X</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topMenu"
+          aria-controls="topMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#learning">Learning</a></li>
+            <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-xxl py-4 py-md-5">
+      <section class="hero-banner mb-4 p-4 p-md-5">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-lg-8">
+            <p class="eyebrow mb-2">Investment Knowledge Club</p>
+            <h1 class="mb-2">Build wealth with confidence, consistency, and clear strategy.</h1>
+            <p class="mb-0 text-light-emphasis">
+              Your dashboard combines membership guidance, activity insights, and quick actions in one place.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end">
+            <button class="btn btn-light btn-sm me-2 mb-2" data-bs-toggle="modal" data-bs-target="#detailsModal">
+              Membership Summary
+            </button>
+            <button class="btn btn-outline-light btn-sm mb-2">Download Report</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="row g-4 align-items-start">
+        <section class="col-12 col-xl-4">
+          <div class="phone-card mx-auto mx-xl-0">
+            <div class="welcome-card card-block">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="avatar"></div>
+                <div>
+                  <h2 class="name mb-0">Michael</h2>
+                  <p class="text-secondary-emphasis small mb-0">Member since 2025</p>
+                </div>
+              </div>
+              <p class="message mb-0">You've officially joined your first investment knowledge club!</p>
+            </div>
+
+            <div class="stats-grid card-block">
+              <div class="stat stat-pink">
+                <span class="label">Benard Makodingo</span>
+                <strong>350</strong>
+              </div>
+              <div class="stat stat-green">
+                <span class="label">kigSmall Foot</span>
+                <strong>225</strong>
+              </div>
+              <div class="stat stat-cream">
+                <span class="label">Caroline Likhio</span>
+                <strong>117</strong>
+              </div>
+              <div class="stat stat-rose">
+                <span class="label">Caroline Likhio</span>
+                <strong>321</strong>
+              </div>
+            </div>
+
+            <div class="card-block tip-card">
+              <h3>Now let's make you great!</h3>
+              <p class="mb-0">
+                Based on your profile, we recommend a membership plan with portfolio guidance and weekly coaching.
+              </p>
+            </div>
+
+            <button class="membership-btn foundation-btn" data-target="foundation-details">FOUNDATION MEMBERSHIP</button>
+            <div id="foundation-details" class="membership-details show">
+              We invest for you in selected shares and the Mansa-X global fund. Service is free online with your personal representative.
+            </div>
+
+            <button class="membership-btn economy-btn" data-target="economy-details">ECONOMY MEMBERSHIP</button>
+            <div id="economy-details" class="membership-details show">
+              We invest your money at a guaranteed rate via the Mansa-X global fund. Service is free online with your personal representative.
+            </div>
+
+            <div class="card-block footer-note">A closer look at the membership details is available here</div>
+          </div>
+        </section>
+
+        <section class="col-12 col-xl-8" id="portfolio">
+          <div class="dashboard-panel p-3 p-md-4 p-lg-5">
+            <div class="row g-3 mb-4">
+              <div class="col-6 col-md-3">
+                <div class="metric-card">
+                  <p class="meta mb-1">Portfolio Value</p>
+                  <h4 class="mb-0">$24,860</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="metric-card">
+                  <p class="meta mb-1">Monthly Return</p>
+                  <h4 class="mb-0 text-success">+8.2%</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="metric-card">
+                  <p class="meta mb-1">Risk Profile</p>
+                  <h4 class="mb-0">Balanced</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="metric-card">
+                  <p class="meta mb-1">Active Plan</p>
+                  <h4 class="mb-0">Foundation</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-12 col-lg-8">
+                <div class="content-card h-100">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0">Performance Snapshot</h5>
+                    <span class="small text-secondary">Last 6 months</span>
+                  </div>
+                  <div class="bars-wrap" aria-label="Performance bars">
+                    <div class="bar" style="--h: 35%"></div>
+                    <div class="bar" style="--h: 52%"></div>
+                    <div class="bar" style="--h: 44%"></div>
+                    <div class="bar" style="--h: 68%"></div>
+                    <div class="bar" style="--h: 59%"></div>
+                    <div class="bar" style="--h: 81%"></div>
+                  </div>
+                  <div class="d-flex justify-content-between small text-secondary mt-2">
+                    <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="content-card h-100">
+                  <h5 class="fw-bold mb-3">Goals</h5>
+                  <div id="goalsList"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3" id="learning">
+              <div class="col-12 col-lg-7">
+                <div class="content-card h-100">
+                  <div class="d-flex justify-content-between align-items-center mb-3 gap-2">
+                    <h5 class="fw-bold mb-0">Recent Activity</h5>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Activity filters">
+                      <button class="btn btn-outline-secondary activity-filter active" data-filter="all">All</button>
+                      <button class="btn btn-outline-secondary activity-filter" data-filter="deposit">Deposits</button>
+                      <button class="btn btn-outline-secondary activity-filter" data-filter="return">Returns</button>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-sm align-middle mb-0">
+                      <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Date</th>
+                          <th class="text-end">Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody id="activityBody"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-5" id="support">
+                <div class="content-card h-100">
+                  <h5 class="fw-bold mb-2">Get weekly insights</h5>
+                  <p class="text-secondary small mb-3">Receive short portfolio updates and clear next actions.</p>
+                  <form id="emailForm" class="row g-2" novalidate>
+                    <div class="col-12">
+                      <label class="visually-hidden" for="emailInput">Email</label>
+                      <input id="emailInput" type="email" class="form-control" placeholder="Enter email for updates" required />
+                      <div id="emailFeedback" class="invalid-feedback">Please provide a valid email address.</div>
+                    </div>
+                    <div class="col-12 d-grid">
+                      <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                  </form>
+                  <p id="successMessage" class="text-success fw-semibold mt-2 d-none mb-3">Email submitted successfully.</p>
+
+                  <h6 class="fw-bold mb-2">Learning Hub</h6>
+                  <ul class="list-group list-group-flush small">
+                    <li class="list-group-item px-0">How to build a low-risk starter portfolio</li>
+                    <li class="list-group-item px-0">Understanding fund diversification</li>
+                    <li class="list-group-item px-0">3 habits for long-term investors</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailsModalLabel">Membership Summary</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Foundation focuses on guided growth with flexible allocations. Economy focuses on lower risk with guaranteed-rate structure.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
